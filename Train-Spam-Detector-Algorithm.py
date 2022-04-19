@@ -13,9 +13,9 @@ target = df.pop('class')
 seed = 168
 rf_model = RandomForestClassifier(random_state=seed)
 rf_model.fit(df, target)
-preds = rf_model.predict(df)
-# print (preds)
+predict = rf_model.predict(df)
+# print (predict)
 
-acc_score = accuracy_score(target, preds)
+acc_score = accuracy_score(target, predict)
 print(acc_score)
 
